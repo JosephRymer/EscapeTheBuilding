@@ -3,11 +3,11 @@
 using UnrealBuildTool;
 using System.Collections.Generic;
 
-public class MyProjectEditorTarget : TargetRules
+public class BuildingEscapeTarget : TargetRules
 {
-	public MyProjectEditorTarget(TargetInfo Target)
+	public BuildingEscapeTarget(TargetInfo Target)
 	{
-		Type = TargetType.Editor;
+		Type = TargetType.Game;
 	}
 
 	//
@@ -20,6 +20,6 @@ public class MyProjectEditorTarget : TargetRules
 		ref List<string> OutExtraModuleNames
 		)
 	{
-		OutExtraModuleNames.AddRange( new string[] { "MyProject" } );
+		OutExtraModuleNames.AddRange( new string[] { "BuildingEscape" } );
 	}
 }
